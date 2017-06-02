@@ -22,13 +22,17 @@ By turning on Rowboat's spam prevention, r/Overwatch takes a huge burden off mod
 
 > Rowboat has allowed us to efficiently scale the moderation teams of our large public and private community servers, without placing extra burden on our volunteer moderators or sacrificing auditability.
 
-### PapaSmurf - Community Moderator and Discord Partner
+### PapaSmurf - Community Moderator, Server Owner and Discord Partner
 
 > Rowboat has helped me manage the multiple servers I run with quick and easy access to logging information.
 
 ### Tachyon - Community Moderator and Discord Hypesquad Member
 
 > Rowboat allows for easy logging and server administration and moderation; it plays an important role in any discord community and is one of the most responsive bots out there.
+
+### Wolfiri - Community Moderator, Server Owner and Discord Partner
+
+> Before Rowboat came along, I was stuck using poorly built and inadequate bots with confusing in-client configurations or limited dashboard options. Now with Rowboat, I'm able to easily customize every option and plugin, giving me only the features I want and exactly how I want them. The level of customization is unmatched by any other bot. My moderation team now has the tools at their disposal to handle anything thrown at them without needing extensive training to use these tools. I also no longer have to worry about missing anything with the comprehensive moderation log feature. Every change is tracked from nicknames to deleted messages. Not only does Rowboat have the best moderation tools, the utility commands are also heavily used on my servers. We have reminders, multi-jumbo emoji, and random cats! Every feature on Rowboat is well thought out and built with the user's experience in mind. Rowboat is an exceptional bot and has truly enhanced my experience on Discord -- I can't imagine moderating a server without it!
 
 ## Plugins
 
