@@ -16,7 +16,7 @@ By using Rowboat's support for multiple mod logs, r/Overwatch's admins are able 
 
 By turning on Rowboat's spam prevention, r/Overwatch takes a huge burden off moderators and ensures the server is safe even when nobody is watching. With the high level of configurability they where able to ensure a level of security which does not impact normal chat, but catches bad actors quickly and efficiently.
 
-## User Testamonial's
+## User Testimonials
 
 ### Looney - Events and Community for Discord
 
@@ -39,7 +39,7 @@ By turning on Rowboat's spam prevention, r/Overwatch takes a huge burden off mod
 - Administration
   - Banning, kicking, muting
   - Managing and tracking infractions and reasons per user and moderator
-  - User persistance (resetting roles/nickname/etc when users leave and rejoin)
+  - User persistence (resetting roles/nickname/etc when users leave and rejoin)
   - Chat cleaning and archiving
   - Granular role management (adding/removing roles)
   - Invite pruning
@@ -79,10 +79,9 @@ By turning on Rowboat's spam prevention, r/Overwatch takes a huge burden off mod
   - Ability to entirely block users from starboard
   - Ability to lock/unlock starboard on-demand
 - Utilities
-  - Long-term persistant reminders
+  - Long-term persistent reminders
   - Random number and coin generation
   - User information, including last seen time
   - Server information
   - User search
   - CAT PHOTOS
-
