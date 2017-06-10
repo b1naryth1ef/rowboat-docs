@@ -19,6 +19,7 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
 
 | Option | Description | Type | Default |
 |--------|-------------|------|---------|
+| filter\_zalgo | Whether to filter zalgo text from messages | true |
 | filter\_invites | Whether to filter invite links from messages | bool | true |
 | invites\_guild\_whitelist | A list of whitelisted guild IDs for invite codes | list | empty |
 | invites\_whitelist | A list of whitelisted invite codes or vanities | list | empty |
@@ -28,3 +29,21 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
 | domains\_blacklist | A blacklist of domain names | list | empty |
 | blocked\_tokens | A list of tokens (can appear in the middle of words) that are blacklisted | list | empty |
 | blocked\_words | A list of words (must be seperated by a boundary) that are blacklisted | list | empty |
+
+## Configuration Example
+
+```
+	censor:
+		levels:
+			0:
+				filter_zalgo: true
+				filter_invites: true
+				invites_guild_whitelist: [205769246008016897, 272885620769161216]
+				invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight',]
+				invites_blacklist: []
+				filter_domains: true
+				domains_whitelist: []
+				domains_blacklist: ['website.net']
+				blocked_tokens: ['block']
+   				blocked_words: ['example' 'of' 'blocked' 'words']
+```

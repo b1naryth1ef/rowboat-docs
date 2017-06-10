@@ -7,3 +7,4 @@
     * [Admin](plugins/admin.md)
     * [Censor](plugins/censor.md)
     * [Modlog](plugins/modlog.md)
+    * [Utility](plugins/utility.md)
