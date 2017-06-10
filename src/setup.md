@@ -73,7 +73,7 @@ plugins:
         filter_invites: true
         invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight']
         filter_domains: false
-
+```
 
 
 
@@ -296,6 +296,7 @@ Starboard allows users to vote on messages using :star: reactions. After the spe
 
 ### Reddit
 
+```
 	reddit:
 		subs:
 			discordapp:
