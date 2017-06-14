@@ -13,7 +13,7 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
 | Option | Description | Type | Default |
 |--------|-------------|------|---------|
 | levels | A mapping of levels to Censor Configurations. This will match any user with a level that is equal or lower | dict | empty |
-| channels | A mapping of channels to Censor Configurations. | dict | empty |
+| channels | A mapping of channels to Censor Configurations | dict | empty |
 
 ### Censor Configuration
 
@@ -33,17 +33,17 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
 ## Configuration Example
 
 ```
-	censor:
-		levels:
-			0:
-				filter_zalgo: true
-				filter_invites: true
-				invites_guild_whitelist: [205769246008016897, 272885620769161216]
-				invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight',]
-				invites_blacklist: []
-				filter_domains: true
-				domains_whitelist: []
-				domains_blacklist: ['website.net']
-				blocked_tokens: ['block']
-   				blocked_words: ['example' 'of' 'blocked' 'words']
+  censor:
+    levels:
+      0:
+        filter_zalgo: true
+        filter_invites: true
+        invites_guild_whitelist: [205769246008016897, 272885620769161216]
+        invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight',]
+        invites_blacklist: []
+        filter_domains: true
+        domains_whitelist: []
+        domains_blacklist: ['website.net']
+        blocked_tokens: ['block']
+        blocked_words: ['example' 'of' 'blocked' 'words']
 ```
