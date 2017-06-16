@@ -3,7 +3,12 @@
 [Introduction](README.md)
 
 * [Setting Up Rowboat](setup.md)
+* [General Configuration](general.md)
 * [Plugins]()
+    * [Utility](plugins/utility.md)
     * [Admin](plugins/admin.md)
     * [Censor](plugins/censor.md)
+	* [Spam](plguins/spam.md)
     * [Modlog](plugins/modlog.md)
+	* [Starboard](plugins/starboard.md)
+	* [Reddit](plugins/reddit.md)

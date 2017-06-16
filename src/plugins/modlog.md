@@ -8,9 +8,9 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 |--------|-------------|------|---------|
 | ignored\_users | A list of user ids which are ignored in the modlog. This is useful for ignoring bots that regularly delete or edit their messages | list | empty |
 | new\_member\_threshold | The number of seconds an account is considered new | int | 900 (15 minutes) |
-| channels | Mapping of channel names/ids to channel configurations | dict | empty |
+| channels | Mapping of channel names/ids to ModLog Configurations | dict | empty |
 
-### Channel Configuration
+### ModLog Configuration
 
 | Option | Description | Type | Default |
 |--------|-------------|------|---------|
@@ -53,3 +53,17 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 | SPAM\_DEBUG | A user triggered spam protection |
 | MEMBER\_RESTORE | A user rejoined and had their roles/nickname/etc restored |
 | CENSOR | A user posted a message that was censored by the bot |
+
+## Configuration Example
+
+```
+  modlog:
+    channels:
+      289494042000228352:
+		timestamps: true
+        timezone: GMT+0
+        exclude: [GUILD_MEMBER_AVATAR_CHANGE]
+        include: []
+    ignored_users: [202217402635780096]
+	new_member_threshold: 86400
+```
