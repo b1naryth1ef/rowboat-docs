@@ -7,7 +7,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | Name | Description | Default Level | Usage |
 |------|-------------|---------------|-------|
 | !roles | Returns a list of ids/names for all roles on the server. Useful for configuring other rowboat plugins | Moderator | `!roles` |
-| !mute {user} [reason] | Mutes a user for the given reason. This will only work if `mute_role` is set in the config | Moderator | `!mute 232921983317180416 spamming` OR `!tempmute @rowboat#0001 60m spamming` |
+| !mute {user} [reason] | Mutes a user for the given reason. This will only work if `mute_role` is set in the config | Moderator | `!mute 232921983317180416 spamming` OR  `!tempmute @rowboat#0001 60m spamming` |
 | !unmute {user} | Unmutes a user | Moderator | `!unmute 232921983317180416` |
 | !tempmute {user} {duration} [reason] | Temporarily mutes a user. Will only work if `temp_mute_role` or `mute_role` is set in the config | Moderator | `!tempmute 232921983317180416 30m spamming` OR `!tempmute @rowboat#0001 30m spamming` |
 | !kick {user} [reason] | Kicks the user from the server with the given reason | Moderator | `!kick 232921983317180416 spamming` OR `!kick @rowboat#0001 spamming` |
@@ -16,8 +16,8 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | !softban {user} [reason] | Softbans (bans/unbans) a user with the given reason | Moderator | `!softban 232921983317180416 spamming` OR `!softban @rowboat#0001 spamming` |
 | !tempban {user} {duration} [reason] | Temporarily bans a user with a given reason | Moderator | `!tempban 232921983317180416 5h spamming` OR `!tempban @rowboat#0001 5h spamming` |
 | !archive (here / all) [size] | Archives size many messages in the current guild | Moderator | `!archive all 50` OR `!archive here 50` |
-| !archive user {user} [size] | Archives size many messages that a given user sent in the current guild | Moderator |
-| !archive channel {channel} [size] | Archives size many messages in the given channel | Moderator | `!archive user 232921983317180416 100` OR `!archive user @rowboat#0001 100`
+| !archive user {user} [size] | Archives size many messages that a given user sent in the current guild | Moderator | `!archive user 232921983317180416 100` OR `!archive user @rowboat#0001 100` |
+| !archive channel {channel} [size] | Archives size many messages in the given channel | Moderator | `!archive channel 289482554250100736 20` |
 | !clean all [size] | Cleans (deletes) size many messages in the current channel | Moderator | `!clean all 20` |
 | !clean user {user} [size] | Cleans size many messages a given user sent in the current channel | Moderator | `!clean user 232921983317180416 50` |
 | !clean bots [size] | Cleans size many messages sent by bots in the current channel | Moderator | `!clean bots 30` |
