@@ -19,7 +19,7 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
 
 | Option | Description | Type | Default |
 |--------|-------------|------|---------|
-| filter\_zalgo | Whether to filter zalgo text from messages | true |
+| filter\_zalgo | Whether to filter zalgo text from messages | bool | true |
 | filter\_invites | Whether to filter invite links from messages | bool | true |
 | invites\_guild\_whitelist | A list of whitelisted guild IDs for invite codes | list | empty |
 | invites\_whitelist | A list of whitelisted invite codes or vanities | list | empty |

@@ -2,6 +2,22 @@
 
 The starboard plugin provides an ongoing board of highlighted messages through community voting.
 
+## Commands
+
+| Name | Description | Default Level | Usage |
+|------|-------------|---------------|-------|
+| `!stars show {mid}` | Displays the given starred message | Trusted | `!stars show 320312743842545664` |
+| `!stars stats [user]` | Presents starboard statistics for the whole server or the given user | Moderator | `!stars stats` OR `!stars stats 232921983317180416` |
+| `!stars block {user}` | Prevents the user from starring any messages and prevents their messages from being starred | Moderator | `!stars block @rowboat#0001` OR `!stars block 232921983317180416` |
+| `!stars unblock {user}` | Unblocks a user from the starboard | Moderator | `!stars unblock @rowboat#0001` OR `!stars unblock 232921983317180416` |
+| `!stars hide {mid}` | Hides a starred message from the starboard | Moderator | `!stars hide 320312743842545664` |
+| `!stars unhide {mid}` | Unhides a hidden message | Moderator | `!stars unhide 320312743842545664` |
+| `!stars lock` | Prevents any new starred messages from being posted to the starboard | Administrator | `!stars lock` |
+| `!stars unlock` | Enables starred messages to be posted | Administrator | `!stars unlock` |
+| `!stars check {mid}` | Updates star reaction count on given message | Administrator | `!stars check 320312743842545664` |
+| `!stars update` | Updates reaction count for the whole starboard | Administrator | `!stars update` |
+
+
 ## Configuration Options
 
 | Option | Description | Type | Default |

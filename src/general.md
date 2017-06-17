@@ -58,6 +58,6 @@ Overrides allow you to customize which levels and roles can use each command, or
 "name" is used for all other commands.
 "out: {level: }}" is used to assign the minimum level required to use the command.
 
-You can use "out: {level: }}" by itself to set a minimum required level for ALL commands!
+You can use "{out: {level: }}" by itself to set a minimum required level for ALL commands!
 
 Taking the configuration above as an example, if you didn't want all members to use utility commands (such as jumbo, info, and cat), you can set the level of the "utilities" plugin to 10. This means the role must have at least level 10 assigned to it to use utility commands.
