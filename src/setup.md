@@ -6,8 +6,8 @@ Join https://discord.gg/rowboat and post your request in the #server-requests ch
 
 ## How to Set Up
 
-One rowboat has been added to your server, go to https://dashboard.rowboat.party/ to edit your server's configuration.  
-Use the sidebar to read about each plugin, then use the example below along with the examples on the sidebar to setup your own customize rowboat configuration.
+Once rowboat has been added to your server, go to https://dashboard.rowboat.party/ to edit your server's configuration.  
+Use the sidebar to read about each plugin, then use the example below along with the information in the sidebar to set up your own customized rowboat configuration.
 
 Here is a blank configuration example with web, utilities, admin, modlog, spam, and censor set up:
 

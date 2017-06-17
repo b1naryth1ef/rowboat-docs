@@ -2,6 +2,13 @@
 
 The modlog plugin provides a mechanisim for logging various events and actions to one or more channels. The intention of the modlog is to provide a private feed of server events that administrators and moderators can use to better monitor and audit users actions. The modlog is extremely configurable, and thus fairly complex.
 
+## Commands
+
+| Name | Description | Default Level | Usage |
+|------|-------------|---------------|-------|
+| `!modlog hush` | Disables tracking of message deletes in modlog | Administrator | `!modlog hush` |
+| `!modlog unhush` | Re-enables tracking of message deletes | Administrator | `!modlog unhush` |
+
 ## Configuration Options
 
 | Option | Description | Type | Default |
