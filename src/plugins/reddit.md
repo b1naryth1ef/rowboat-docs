@@ -14,7 +14,7 @@ The Reddit plugin provides a feed of new posts on specified subreddits.
 |--------|-------------|------|---------|
 | channel | Sets which channel the feed should post subreddit threads to | dict | empty |
 | mode | Format of the entries. Options: PRETTY, PLAIN | str | pretty |
-| nsfw | Whether to include NSFW posts | bool | false | 
+| nsfw | Whether to include NSFW posts | bool | false |
 | include\_stats | Whether to include stats for each thread | bool | false |
 
 ## Configuration Example
