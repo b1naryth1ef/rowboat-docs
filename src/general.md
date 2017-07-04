@@ -34,7 +34,7 @@ levels:
 
 This is where you assign levels to each role! Remember, the default level is 0 if a user doesn't have one of the listed roles. Users will have the highest level of the roles they're assigned.
 
-By default, each level has a certain rank associated with it: 0 - Default, 10 - Trusted, 50 - Mod, 100 - Admin. You can view the default rank required for each command on the [Rowboat Docs] (https://rowboat.party/plugins/admin.html)
+By default, each level has a certain rank associated with it: 0 - Default, 10 - Trusted, 50 - Mod, 100 - Admin. You can view the default rank required for each command by looking at the Commands section for the plugin.
 
 Levels can be assigned anywhere from 0 to 100, keeping in mind the default permissions given in the Rowboat Docs.
 
@@ -53,9 +53,9 @@ Here, you can change your prefix, which is the symbol which begins each command.
 
 Overrides allow you to customize which levels and roles can use each command, or group of commands.
 
-"plugin.name" is used for all commands in a plugin (hint: every section that's indented one in beneath the "plugins:" section is a plugin)
-"group" is used for commands which have multiple components. Some example: clean, archive, role, stars)
-"name" is used for all other commands.
+"plugin.name" is used for all commands in a plugin (hint: every section that's indented one in beneath the "plugins:" section is a plugin)  
+"group" is used for commands which have multiple components. Some example: clean, archive, role, stars)  
+"name" is used for all other commands.  
 "out: {level: }}" is used to assign the minimum level required to use the command.
 
 You can use "{out: {level: }}" by itself to set a minimum required level for ALL commands!

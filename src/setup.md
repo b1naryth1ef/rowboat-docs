@@ -74,4 +74,5 @@ plugins:
         filter_invites: true
         invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight']
         filter_domains: false
+		blocked_words: ['fuck']
 ```

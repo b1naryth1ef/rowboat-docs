@@ -44,6 +44,6 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
         filter_domains: true
         domains_whitelist: []
         domains_blacklist: ['website.net']
-        blocked_tokens: ['block']
-        blocked_words: ['example' 'of' 'blocked' 'words']
+        blocked_tokens: ['block', 'word']
+        blocked_words: ['more', 'blocked', 'words']
 ```

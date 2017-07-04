@@ -31,7 +31,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | `!infractions info {inf#}` | Presents information on the given infraction | Moderator | `!infractions info 1274`
 | `!infractions duration {inf#} {duration}` | Updates the duration of the given infraction. Duration starts from time of initial action | Moderator | `!infractions duration 1274 5h` |
 | `!reason {inf#} {reason}` | Updates the reason of a given infraction | Moderator | `!reason 1274 rude behaviour towards staff` |
-| `!stats {user}` | Presents general statistics for a given user | Moderator | `stats 232921983317180416` OR `!stats rowboat#0001` |
+| `!stats {user}` | Presents general statistics for a given user | Moderator | `!stats 232921983317180416` OR `!stats rowboat#0001` |
 | `!msgstats {user} [channel]` | Presents message statistics for a given user in the current guild (or specified channel) | Moderator | `!msgstats 232921983317180416` |
 | `!emojistats (global / server) most` | Displays the most / least used server emojis in the current guild / globally | Moderator | `!emojistats global most` OR `!emojistats server least` |
 | `!voice log {user}` | Displays a list of a given user's recent voice channel activity | Moderator | `!voice log 232921983317180416` OR `!voice log @rowboat#0001` |
