@@ -31,6 +31,9 @@ The spam plugin allows administrators and moderators to limit spam and enforce p
 | max\_emojis | How many emojis can be sent | dict | empty |
 | max\_newlines | How many new lines/line breaks can be sent | dict | empty |
 | max\_duplicates | How many duplicate messages can be sent | dict | empty |
+| clean | Whether or not the offending messages which triggered spam detection should be deleted | bool | false |
+| clean\_count | Maximum number of messages to be deleted | int | 100 |
+| clean\_duration | Maximum duration (in seconds) for which to delete messages | int | 900 |
 
 ## Configuration Example
 
