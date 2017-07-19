@@ -43,9 +43,11 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 | GUILD\_MEMBER\_KICK | A member is kicked |
 | GUILD\_MEMBER\_ROLES\_ADD | A role is added to a member |
 | GUILD\_MEMBER\_ROLES\_RMV | A role is removed from a member |
-| GUILD\_MEMBER\_AVATAR\_CHANGE | A member changes their avatar |
 | GUILD\_ROLE\_CREATE | A role is created |
 | GUILD\_ROLE\_RMV | A role is removed |
+| MEMBER\_TEMP\_MUTED | A tempmute is added |
+| MEMBER\_MUTED | A mute is added |
+| MEMBER\_UNMUTED | A mute is removed |
 | ADD\_NICK | A user adds a nickname |
 | RMV\_NICK | A user removes a nickname |
 | CHANGE\_NICK | A user changes their nickname |

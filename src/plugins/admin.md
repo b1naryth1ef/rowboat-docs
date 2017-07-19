@@ -9,10 +9,13 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | `!roles` | Returns a list of ids/names for all roles on the server. Useful for configuring other rowboat plugins | Moderator | `!roles` |
 | `!role add {user} {role} [reason]` | Adds a role to a given user | Moderator | `!role add 232921983317180416 Moderator Promotion from Member` OR `!role add rowboat#0001 Admin Pretty good Moderator` |
 | `!role remove {user} {role} [reason]` | Removes a role from a given user | Moderator | `!role remove 232921983317180416 Administrator Demoted for being bad at job` OR `!role remove rowboat#0001 Mod Terrible moderator` |
+| `!join / add / give {role}` | Assigns the given role if it's listed in the group_roles config setting | Default | `!join PC` OR `!add Console` OR `!give Tabletop` |
+| `!leave / remove / take {role}` | Removes the given role from the user | Default | `!leave PC` OR `!remove Console` OR `!take Tabletop` |
 | `!mute {user} [reason]` | Mutes a user for the given reason. This will only work if `mute_role` is set in the config | Moderator | `!mute 232921983317180416 spamming` OR  `!tempmute @rowboat#0001 60m spamming` |
 | `!unmute {user}` | Unmutes a user | Moderator | `!unmute 232921983317180416` |
 | `!tempmute {user} {duration} [reason]` | Temporarily mutes a user. Will only work if `temp_mute_role` or `mute_role` is set in the config | Moderator | `!tempmute 232921983317180416 30m spamming` OR `!tempmute @rowboat#0001 30m spamming` |
 | `!kick {user} [reason]` | Kicks the user from the server with the given reason | Moderator | `!kick 232921983317180416 spamming` OR `!kick @rowboat#0001 spamming` |
+| `!mkick {users] -r [reason]` | Kicks multiple users from the server with the given reason | Moderator | `!mkick 232921983317180416 80351110224678912 108598213681922048 spamming` |
 | `!ban {user} [reason]` | Bans a user from the server with the given reason | Moderator | `!ban 232921983317180416 spamming` OR `!ban @rowboat#0001 spamming` |
 | `!unban {user} [reason]` | Unbans a user | Moderator | `!unban 232921983317180416` |
 | `!forceban {uid} [reason]` | Force bans a user who is not currently in the server with the given reason | Moderator | `!forceban 232921983317180416 spamming` |
@@ -43,7 +46,9 @@ The admin plugin provides a set of administrator commands that help in moderatin
 |--------|-------------|------|---------|
 | confirm\_actions | Whether to confirm ban/kick actions in the current channel | bool | true |
 | mute\_role| Role ID that is set for users who are muted | id | none |
-| temp\_mute\_role | Role ID that is set for users who are muted. If not set, defaults to `mute_role` | id | none |
+| role_aliases | Aliases which can be used in place of role IDs in commands | dict | empty |
+| group_roles | Roles which can be join and left by any user | dict | empty |
+| reason_edit_level | Minimum level to allow users to edit other users' infraction reasons | int | 100 |
 | persist | Controls the member persistance settings | dict | empty |
 
 ### Member Persistance Settings
@@ -62,8 +67,13 @@ The admin plugin provides a set of administrator commands that help in moderatin
 	admin:
 		confirm_actions: false
 		mute_role: 289494296703533058
-		temp_mute_role: 274638000820846592
-		DONT_MENTION_B1NZY: true
+		role_aliases:
+			role1: 205769314199011329
+			role2: 333806119199703042
+		group_roles:
+			PC: 278810978722906112
+			Console: 278972377587515392
+			Tabletop: 278972423502561280
 		persist:
 			roles: true
 			role_ids: [290295853124550657, 289494296703533058]
