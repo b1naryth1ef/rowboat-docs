@@ -11,7 +11,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | `!role remove {user} {role} [reason]` | Removes a role from a given user | Moderator | `!role remove 232921983317180416 Administrator Demoted for being bad at job` OR `!role remove rowboat#0001 Mod Terrible moderator` |
 | `!join / add / give {role}` | Assigns the given role if it's listed in the group_roles config setting | Default | `!join PC` OR `!add Console` OR `!give Tabletop` |
 | `!leave / remove / take {role}` | Removes the given role from the user | Default | `!leave PC` OR `!remove Console` OR `!take Tabletop` |
-| `!warn {user} [reason]` | Adds a warning infraction to the user | `!warn 232921983317180416 1st warning, spamming emoji` OR `!warn @rowboat#0001 2nd warning, going off-topic` |
+| `!warn {user} [reason]` | Adds a warning infraction to the user | Moderator | `!warn 232921983317180416 1st warning, spamming emoji` OR `!warn @rowboat#0001 2nd warning, going off-topic` |
 | `!mute {user} [reason]` | Mutes a user for the given reason. This will only work if `mute_role` is set in the config | Moderator | `!mute 232921983317180416 spamming` OR  `!tempmute @rowboat#0001 60m spamming` |
 | `!unmute {user}` | Unmutes a user | Moderator | `!unmute 232921983317180416` |
 | `!tempmute {user} {duration} [reason]` | Temporarily mutes a user. Will only work if `temp_mute_role` or `mute_role` is set in the config | Moderator | `!tempmute 232921983317180416 30m spamming` OR `!tempmute @rowboat#0001 30m spamming` |
