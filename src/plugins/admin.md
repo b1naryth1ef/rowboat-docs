@@ -76,3 +76,4 @@ The admin plugin provides a set of administrator commands that help in moderatin
 			Console: 278972377587515392
 			Tabletop: 278972423502561280
 		temp_mute_role: 274638000820846592
+```
