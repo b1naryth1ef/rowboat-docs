@@ -40,7 +40,7 @@ plugins:
   modlog:
     channels:
       #######################:
-        exclude: [GUILD_MEMBER_AVATAR_CHANGE]
+        exclude: []
         include: []
     ignored_users: []
     
