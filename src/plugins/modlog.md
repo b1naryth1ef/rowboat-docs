@@ -71,7 +71,7 @@ The modlog plugin provides a mechanisim for logging various events and actions t
       289494042000228352:
 		timestamps: true
         timezone: GMT+0
-        exclude: [GUILD_MEMBER_AVATAR_CHANGE]
+        exclude: []
         include: []
     ignored_users: [202217402635780096]
 	new_member_threshold: 86400
