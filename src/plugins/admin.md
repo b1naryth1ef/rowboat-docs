@@ -75,9 +75,4 @@ The admin plugin provides a set of administrator commands that help in moderatin
 			PC: 278810978722906112
 			Console: 278972377587515392
 			Tabletop: 278972423502561280
-		persist:
-			roles: true
-			role_ids: [290295853124550657, 289494296703533058]
-			nickname: true
-			voice: false
-```
+		temp_mute_role: 274638000820846592

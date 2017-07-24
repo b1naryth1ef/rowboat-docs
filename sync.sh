@@ -1,5 +1,7 @@
 #!/bin/sh
 
-mdbook build
+echo "Running Gitbook Build"
+gitbook build src/
 
-rsync -avzP book/* root@zek.hydr0.com:/var/www/rowboat-docs/
+echo "Syncing Files"
+rsync -avzP src/_book/* root@zek.hydr0.com:/var/www/rowboat-docs/
