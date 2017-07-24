@@ -16,7 +16,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | `!unmute {user}` | Unmutes a user | Moderator | `!unmute 232921983317180416` |
 | `!tempmute {user} {duration} [reason]` | Temporarily mutes a user. Will only work if `temp_mute_role` or `mute_role` is set in the config | Moderator | `!tempmute 232921983317180416 30m spamming` OR `!tempmute @rowboat#0001 30m spamming` |
 | `!kick {user} [reason]` | Kicks the user from the server with the given reason | Moderator | `!kick 232921983317180416 spamming` OR `!kick @rowboat#0001 spamming` |
-| `!mkick {users] -r [reason]` | Kicks multiple users from the server with the given reason | Moderator | `!mkick 232921983317180416 80351110224678912 108598213681922048 spamming` |
+| `!mkick {users] -r [reason]` | Kicks multiple users from the server with the given reason | Moderator | `!mkick 232921983317180416 80351110224678912 108598213681922048 -r spamming` |
 | `!ban {user} [reason]` | Bans a user from the server with the given reason | Moderator | `!ban 232921983317180416 spamming` OR `!ban @rowboat#0001 spamming` |
 | `!unban {user} [reason]` | Unbans a user | Moderator | `!unban 232921983317180416` |
 | `!forceban {uid} [reason]` | Force bans a user who is not currently in the server with the given reason | Moderator | `!forceban 232921983317180416 spamming` |
@@ -45,7 +45,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 
 | Option | Description | Type | Default |
 |--------|-------------|------|---------|
-| confirm\_actions | Whether to confirm ban/kick actions in the current channel | bool | true |
+| confirm\_actions | Whether to confirm that an action was done in the current channel | bool | true |
 | mute\_role| Role ID that is set for users who are muted | id | none |
 | role_aliases | Aliases which can be used in place of role IDs in commands | dict | empty |
 | group_roles | Roles which can be join and left by any user | dict | empty |
@@ -76,3 +76,4 @@ The admin plugin provides a set of administrator commands that help in moderatin
 			Console: 278972377587515392
 			Tabletop: 278972423502561280
 		temp_mute_role: 274638000820846592
+```
