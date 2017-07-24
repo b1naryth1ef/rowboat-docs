@@ -45,7 +45,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 
 | Option | Description | Type | Default |
 |--------|-------------|------|---------|
-| confirm\_actions | Whether to confirm ban/kick actions in the current channel | bool | true |
+| confirm\_actions | Whether to confirm that an action was done in the current channel | bool | true |
 | mute\_role| Role ID that is set for users who are muted | id | none |
 | role_aliases | Aliases which can be used in place of role IDs in commands | dict | empty |
 | group_roles | Roles which can be join and left by any user | dict | empty |
