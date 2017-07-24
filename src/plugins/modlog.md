@@ -43,9 +43,11 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 | GUILD\_MEMBER\_KICK | A member is kicked |
 | GUILD\_MEMBER\_ROLES\_ADD | A role is added to a member |
 | GUILD\_MEMBER\_ROLES\_RMV | A role is removed from a member |
-| GUILD\_MEMBER\_AVATAR\_CHANGE | A member changes their avatar |
 | GUILD\_ROLE\_CREATE | A role is created |
 | GUILD\_ROLE\_RMV | A role is removed |
+| MEMBER\_TEMP\_MUTED | A tempmute is added |
+| MEMBER\_MUTED | A mute is added |
+| MEMBER\_UNMUTED | A mute is removed |
 | ADD\_NICK | A user adds a nickname |
 | RMV\_NICK | A user removes a nickname |
 | CHANGE\_NICK | A user changes their nickname |
@@ -59,7 +61,7 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 | COMMAND\_USED | A user uses a rowboat command |
 | SPAM\_DEBUG | A user triggered spam protection |
 | MEMBER\_RESTORE | A user rejoined and had their roles/nickname/etc restored |
-| CENSOR | A user posted a message that was censored by the bot |
+| CENSORED | A user posted a message that was censored by the bot |
 
 ## Configuration Example
 
@@ -69,7 +71,7 @@ The modlog plugin provides a mechanisim for logging various events and actions t
       289494042000228352:
 		timestamps: true
         timezone: GMT+0
-        exclude: [GUILD_MEMBER_AVATAR_CHANGE]
+        exclude: []
         include: []
     ignored_users: [202217402635780096]
 	new_member_threshold: 86400

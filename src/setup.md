@@ -39,7 +39,7 @@ plugins:
   modlog:
     channels:
       #######################:
-        exclude: [GUILD_MEMBER_AVATAR_CHANGE]
+        exclude: []
         include: []
     ignored_users: []
 
@@ -73,4 +73,5 @@ plugins:
         filter_invites: true
         invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight']
         filter_domains: false
+		    blocked_words: ['fuck']
 ```
