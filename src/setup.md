@@ -47,7 +47,7 @@ plugins:
     levels:
       0:
         punishment: TEMPMUTE
-		punishment_duration: 120
+        punishment_duration: 120
         max_messages:
           count: 10
           interval: 7
@@ -73,5 +73,5 @@ plugins:
         filter_invites: true
         invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight']
         filter_domains: false
-		    blocked_words: ['fuck']
+        blocked_words: ['word1', 'word2', 'word3']
 ```

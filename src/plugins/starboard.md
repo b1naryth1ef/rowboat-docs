@@ -40,7 +40,7 @@ The starboard plugin provides an ongoing board of highlighted messages through c
   starboard:
     channels:
       301118039326457867:
-	    clear_on_delete: true
+        clear_on_delete: true
         min_stars: 6
         star_color_max: 15
         prevent_self_star: true

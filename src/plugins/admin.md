@@ -65,15 +65,15 @@ The admin plugin provides a set of administrator commands that help in moderatin
 ## Configuration Example
 
 ```
-	admin:
-		confirm_actions: false
-		mute_role: 289494296703533058
-		role_aliases:
-			role1: 205769314199011329
-			role2: 333806119199703042
-		group_roles:
-			PC: 278810978722906112
-			Console: 278972377587515392
-			Tabletop: 278972423502561280
-		temp_mute_role: 274638000820846592
+  admin:
+    confirm_actions: false
+      mute_role: 289494296703533058
+      temp_mute_role: 274638000820846592
+      role_aliases:
+        role1: 205769314199011329
+        role2: 333806119199703042
+      group_roles:
+        PC: 278810978722906112
+        Console: 278972377587515392
+        Tabletop: 278972423502561280	
 ```
