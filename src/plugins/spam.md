@@ -42,7 +42,7 @@ The spam plugin allows administrators and moderators to limit spam and enforce p
     levels:
       0:
         punishment: TEMPMUTE
-		punishment_duration: 120
+	punishment_duration: 120
         max_messages:
           count: 10
           interval: 7
@@ -52,9 +52,9 @@ The spam plugin allows administrators and moderators to limit spam and enforce p
         max_links:
           count: 10
           interval: 60
-		max_attachments:
-		  count: 10
-		  interval: 60
+	max_attachments:
+	  count: 10
+	  interval: 60
         max_emojis:
           count: 100
           interval: 120
