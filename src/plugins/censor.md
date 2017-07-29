@@ -44,6 +44,11 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
         filter_domains: true
         domains_whitelist: []
         domains_blacklist: ['website.net']
-        blocked_tokens: ['block', 'word']
-        blocked_words: ['more', 'blocked', 'words']
+        blocked_tokens: ['token1', 'token2']
+        blocked_words: ['word1', 'word2', 'word3']
+     channels:
+      290923757399310337:
+        blocked_words: ['word']
 ```
+
+Note: Every censor configuration setting can be applied to either `levels` or `channels`
