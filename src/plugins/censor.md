@@ -48,7 +48,7 @@ This, combined with the Spam plugin can result in a very robust automatic abuse-
         blocked_words: ['word1', 'word2', 'word3']
      channels:
       290923757399310337:
-        blocked_words: ['word']
+        blocked_words: ['word4']
 ```
 
 Note: Every censor configuration setting can be applied to either `levels` or `channels`
