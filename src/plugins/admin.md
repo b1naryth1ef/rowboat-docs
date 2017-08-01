@@ -69,6 +69,12 @@ The admin plugin provides a set of administrator commands that help in moderatin
     confirm_actions: false
       mute_role: 289494296703533058
       temp_mute_role: 274638000820846592
+      reason_edit_level: 50
+      persist:
+        roles: true
+          role_ids: [278810978722906112, 278972423502561280, 278972377587515392]
+        nickname: true
+        voice: false
       role_aliases:
         role1: 205769314199011329
         role2: 333806119199703042
