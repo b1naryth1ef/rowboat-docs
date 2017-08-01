@@ -69,7 +69,7 @@ The modlog plugin provides a mechanisim for logging various events and actions t
   modlog:
     channels:
       289494042000228352:
-	timestamps: true
+        timestamps: true
         timezone: GMT+0
         exclude: []
         include: []
