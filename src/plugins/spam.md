@@ -43,6 +43,9 @@ The spam plugin allows administrators and moderators to limit spam and enforce p
       0:
         punishment: TEMPMUTE
         punishment_duration: 120
+        clean: true
+        clean_count: 50
+        clean_duration: 500
         max_messages:
           count: 10
           interval: 7
