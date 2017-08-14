@@ -7,22 +7,23 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | Name | Description | Default Level | Usage |
 |------|-------------|---------------|-------|
 | `!roles` | Returns a list of ids/names for all roles on the server. Useful for configuring other rowboat plugins | Moderator | `!roles` |
-| `!role add {user} {role} [reason]` | Adds a role to a given user | Moderator | `!role add 232921983317180416 Moderator Promotion from Member` OR `!role add rowboat#0001 Admin Pretty good Moderator` |
-| `!role remove {user} {role} [reason]` | Removes a role from a given user | Moderator | `!role remove 232921983317180416 Administrator Demoted for being bad at job` OR `!role remove rowboat#0001 Mod Terrible moderator` |
+| `!role add {user} {role} [reason]` | Adds a role to a user | Moderator | `!role add 232921983317180416 Moderator Promotion from Member` OR `!role add rowboat#0001 Admin Pretty good Moderator` |
+| `!role remove {user} {role} [reason]` | Removes a role from a user | Moderator | `!role remove 232921983317180416 Administrator Demoted for being bad at job` OR `!role remove rowboat#0001 Mod Terrible moderator` |
 | `!role unlock {role ID}` | Unlocks a role listed in the locked_roles config setting for 5 minutes, allowing permission updates | Administrator | `!role unlock 346471724126044160` |
-| `!join / add / give {role}` | Assigns the given role if it's listed in the group_roles config setting | Default | `!join PC` OR `!add Console` OR `!give Tabletop` |
-| `!leave / remove / take {role}` | Removes the given role from the user | Default | `!leave PC` OR `!remove Console` OR `!take Tabletop` |
-| `!warn {user} [reason]` | Adds a warning infraction to the user | Moderator | `!warn 232921983317180416 1st warning, spamming emoji` OR `!warn @rowboat#0001 2nd warning, going off-topic` |
-| `!mute {user} [reason]` | Mutes a user for the given reason. This will only work if `mute_role` is set in the config | Moderator | `!mute 232921983317180416 spamming` OR  `!tempmute @rowboat#0001 60m spamming` |
+| `!join / add / give {role}` | Assigns a role if it's listed in the group_roles config setting | Default | `!join PC` OR `!add Console` OR `!give Tabletop` |
+| `!leave / remove / take {role}` | Removes a group role from a user | Default | `!leave PC` OR `!remove Console` OR `!take Tabletop` |
+| `!temprole {user} {role ID} {duration} [reason]` | Temporarily applies a role to a user | Moderator | `!temprole 232921983317180416 295646805650046977 7d Trial Mod` OR `!temprole @rowboat#0001 295646805650046977 24h Member of the Day` |
+| `!warn {user} [reason]` | Adds a warning infraction to a user | Moderator | `!warn 232921983317180416 1st warning, spamming emoji` OR `!warn @rowboat#0001 2nd warning, going off-topic` |
+| `!mute {user} [reason]` | Mutes a user. This will only work if `mute_role` is set in the config | Moderator | `!mute 232921983317180416 spamming` OR  `!tempmute @rowboat#0001 60m spamming` |
 | `!unmute {user}` | Unmutes a user | Moderator | `!unmute 232921983317180416` |
 | `!tempmute {user} {duration} [reason]` | Temporarily mutes a user. Will only work if `temp_mute_role` or `mute_role` is set in the config | Moderator | `!tempmute 232921983317180416 30m spamming` OR `!tempmute @rowboat#0001 30m spamming` |
-| `!kick {user} [reason]` | Kicks the user from the server with the given reason | Moderator | `!kick 232921983317180416 spamming` OR `!kick @rowboat#0001 spamming` |
-| `!mkick {users] -r [reason]` | Kicks multiple users from the server with the given reason | Moderator | `!mkick 232921983317180416 80351110224678912 108598213681922048 -r spamming` |
-| `!ban {user} [reason]` | Bans a user from the server with the given reason | Moderator | `!ban 232921983317180416 spamming` OR `!ban @rowboat#0001 spamming` |
+| `!kick {user} [reason]` | Kicks the user from the server | Moderator | `!kick 232921983317180416 spamming` OR `!kick @rowboat#0001 spamming` |
+| `!mkick {users] -r [reason]` | Kicks multiple users from the server | Moderator | `!mkick 232921983317180416 80351110224678912 108598213681922048 -r spamming` |
+| `!ban {user} [reason]` | Bans a user from the server | Moderator | `!ban 232921983317180416 spamming` OR `!ban @rowboat#0001 spamming` |
 | `!unban {user} [reason]` | Unbans a user | Moderator | `!unban 232921983317180416` |
-| `!forceban {User ID} [reason]` | Force bans a user who is not currently in the server with the given reason | Moderator | `!forceban 232921983317180416 spamming` |
-| `!softban {user} [reason]` | Softbans (bans/unbans) a user with the given reason | Moderator | `!softban 232921983317180416 spamming` OR `!softban @rowboat#0001 spamming` |
-| `!tempban {user} {duration} [reason]` | Temporarily bans a user with a given reason | Moderator | `!tempban 232921983317180416 5h spamming` OR `!tempban @rowboat#0001 5h spamming` |
+| `!forceban {User ID} [reason]` | Force bans a user who is not currently in the server | Moderator | `!forceban 232921983317180416 spamming` |
+| `!softban {user} [reason]` | Softbans (bans/unbans) a user and deletes the user's messages sent within the last 7 days | Moderator | `!softban 232921983317180416 spamming` OR `!softban @rowboat#0001 spamming` |
+| `!tempban {user} {duration} [reason]` | Temporarily bans a user | Moderator | `!tempban 232921983317180416 5h spamming` OR `!tempban @rowboat#0001 5h spamming` |
 | `!archive (here / all) [count]` | Archives [count] many messages in the current channel | Moderator | `!archive all 50` OR `!archive here 50` |
 | `!archive user {user} [count]` | Archives [count] many messages that a given user sent in the current guild | Moderator | `!archive user 232921983317180416 100` OR `!archive user @rowboat#0001 100` |
 | `!archive channel {channel} [count]` | Archives [count] many messages in the given channel | Moderator | `!archive channel 289482554250100736 20` |
@@ -36,9 +37,12 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | `!infractions info {inf#}` | Presents information on the given infraction | Moderator | `!infractions info 1274`
 | `!infractions duration {inf#} {duration}` | Updates the duration of the given infraction. Duration starts from time of initial action | Moderator | `!infractions duration 1274 5h` |
 | `!reason {inf#} {reason}` | Updates the reason of a given infraction | Moderator | `!reason 1274 rude behaviour towards staff` |
+| `!backups restore {user}` | Restores a user to the most recently saved member backup | Moderator | `!backups restore 232921983317180416` OR `!backups restore rowboat#0001` |
+| `!backups clear {user ID}` | Deletes all saved backups for a user | Moderator | `!backups clear 232921983317180416` OR `!backups clear rowboat#0001` |
 | `!stats {user}` | Presents general statistics for a given user | Moderator | `!stats 232921983317180416` OR `!stats rowboat#0001` |
 | `!emojistats (global / server) most` | Displays the most / least used server emojis in the current guild / globally | Moderator | `!emojistats global most` OR `!emojistats server least` |
 | `!voice log {user}` | Displays a list of a given user's recent voice channel activity | Moderator | `!voice log 232921983317180416` OR `!voice log @rowboat#0001` |
+| `!invites prune [uses]` | Deletes server invites with the given number of uses or less. Cleans 1 and 0 use invites if left blank | `!invites prune 5` |
 
 
 ## Configuration Options
