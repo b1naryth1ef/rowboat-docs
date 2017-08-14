@@ -14,7 +14,7 @@ By using Rowboat's support for multiple mod logs, r/Overwatch's admins are able 
 
 #### Spam Prevention
 
-By turning on Rowboat's spam prevention, r/Overwatch takes a huge burden off moderators and ensures the server is safe even when nobody is watching. With the high level of configurability they where able to ensure a level of security which does not impact normal chat, but catches bad actors quickly and efficiently.
+By turning on Rowboat's spam prevention, r/Overwatch takes a huge burden off moderators and ensures the server is safe even when nobody is watching. With the high level of configurability they were able to ensure a level of security which does not impact normal chat, but catches bad actors quickly and efficiently.
 
 ## User Testimonials
 
