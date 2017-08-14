@@ -34,20 +34,22 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 |--------|-------------|
 | CHANNEL\_CREATE | A channel is created |
 | CHANNEL\_DELETE | A channel is deleted |
-| GUILD\_BAN\_ADD | A ban is added |
-| GUILD\_SOFTBAN\_ADD | A softban is added |
-| GUILD\_TEMPBAN\_ADD | A tempban is added |
-| GUILD\_BAN\_ADD\_REASON | A ban (with a reason) is added |
 | GUILD\_MEMBER\_ADD | A member joins |
 | GUILD\_MEMBER\_REMOVE | A member leaves (or gets kicked) |
-| GUILD\_MEMBER\_KICK | A member is kicked |
-| GUILD\_MEMBER\_ROLES\_ADD | A role is added to a member |
-| GUILD\_MEMBER\_ROLES\_RMV | A role is removed from a member |
 | GUILD\_ROLE\_CREATE | A role is created |
 | GUILD\_ROLE\_RMV | A role is removed |
+| GUILD\_BAN\_ADD | A ban is added |
+| MEMBER\_ROLE\_ADD | A role is added to a member |
+| MEMBER\_ROLE\_RMV | A role is removed from a member |
 | MEMBER\_TEMP\_MUTED | A tempmute is added |
 | MEMBER\_MUTED | A mute is added |
 | MEMBER\_UNMUTED | A mute is removed |
+| MEMBER\_KICK | A member is kicked |
+| MEMBER\_BAN | A ban (with a reason) is added |
+| MEMBER_SOFTBAN | A softban is added |
+| MEMBER_TEMPBAN | A tempban is added |
+| MEMBER_WARNED | A warning is added |
+| MEMBER\_RESTORE | A user rejoined and had their roles/nickname/etc restored |
 | ADD\_NICK | A user adds a nickname |
 | RMV\_NICK | A user removes a nickname |
 | CHANGE\_NICK | A user changes their nickname |
@@ -60,7 +62,6 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 | VOICE\_CHANNEL\_MOVE | A user moves voice channels |
 | COMMAND\_USED | A user uses a rowboat command |
 | SPAM\_DEBUG | A user triggered spam protection |
-| MEMBER\_RESTORE | A user rejoined and had their roles/nickname/etc restored |
 | CENSORED | A user posted a message that was censored by the bot |
 
 ## Configuration Example
@@ -70,7 +71,7 @@ The modlog plugin provides a mechanisim for logging various events and actions t
     channels:
       289494042000228352:
         timestamps: true
-        timezone: GMT+0
+        timezone: Etc/GMT-8
         exclude: []
         include: []
     ignored_users: [202217402635780096]
