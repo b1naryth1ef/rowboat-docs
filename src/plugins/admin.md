@@ -42,7 +42,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
 | `!stats {user}` | Presents general statistics for a given user | Moderator | `!stats 232921983317180416` OR `!stats rowboat#0001` |
 | `!emojistats (global / server) most` | Displays the most / least used server emojis in the current guild / globally | Moderator | `!emojistats global most` OR `!emojistats server least` |
 | `!voice log {user}` | Displays a list of a given user's recent voice channel activity | Moderator | `!voice log 232921983317180416` OR `!voice log @rowboat#0001` |
-| `!invites prune [uses]` | Deletes server invites with the given number of uses or less. Cleans 1 and 0 use invites if left blank | `!invites prune 5` |
+| `!invites prune [uses]` | Deletes server invites with the given number of uses or less. Cleans 1 and 0 use invites if left blank | Administrator | `!invites prune 5` |
 
 
 ## Configuration Options
