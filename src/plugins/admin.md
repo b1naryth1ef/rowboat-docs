@@ -6,13 +6,13 @@ The admin plugin provides a set of administrator commands that help in moderatin
 
 | Name | Description | Default Level | Usage |
 |------|-------------|---------------|-------|
+| `!join / add / give {role}` | Assigns a role if it's listed in the group_roles config setting | Default | `!join PC` OR `!add Console` OR `!give Tabletop` |
+| `!leave / remove / take {role}` | Removes a group role from a user | Default | `!leave PC` OR `!remove Console` OR `!take Tabletop` |
+| `!temprole {user} {role ID} {duration} [reason]` | Temporarily applies a role to a user | Moderator | `!temprole 232921983317180416 295646805650046977 7d Trial Mod` OR `!temprole @rowboat#0001 295646805650046977 24h Member of the Day` |
 | `!roles` | Returns a list of ids/names for all roles on the server. Useful for configuring other rowboat plugins | Moderator | `!roles` |
 | `!role add {user} {role} [reason]` | Adds a role to a user | Moderator | `!role add 232921983317180416 Moderator Promotion from Member` OR `!role add rowboat#0001 Admin Pretty good Moderator` |
 | `!role remove {user} {role} [reason]` | Removes a role from a user | Moderator | `!role remove 232921983317180416 Administrator Demoted for being bad at job` OR `!role remove rowboat#0001 Mod Terrible moderator` |
 | `!role unlock {role ID}` | Unlocks a role listed in the locked_roles config setting for 5 minutes, allowing permission updates | Administrator | `!role unlock 346471724126044160` |
-| `!join / add / give {role}` | Assigns a role if it's listed in the group_roles config setting | Default | `!join PC` OR `!add Console` OR `!give Tabletop` |
-| `!leave / remove / take {role}` | Removes a group role from a user | Default | `!leave PC` OR `!remove Console` OR `!take Tabletop` |
-| `!temprole {user} {role ID} {duration} [reason]` | Temporarily applies a role to a user | Moderator | `!temprole 232921983317180416 295646805650046977 7d Trial Mod` OR `!temprole @rowboat#0001 295646805650046977 24h Member of the Day` |
 | `!warn {user} [reason]` | Adds a warning infraction to a user | Moderator | `!warn 232921983317180416 1st warning, spamming emoji` OR `!warn @rowboat#0001 2nd warning, going off-topic` |
 | `!mute {user} [reason]` | Mutes a user. This will only work if `mute_role` is set in the config | Moderator | `!mute 232921983317180416 spamming` OR  `!tempmute @rowboat#0001 60m spamming` |
 | `!unmute {user}` | Unmutes a user | Moderator | `!unmute 232921983317180416` |
