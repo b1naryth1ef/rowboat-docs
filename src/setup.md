@@ -12,20 +12,16 @@ Below is a blank configuration example with web, utilities, admin, modlog, spam,
 
 ```
 web:
-  # Username
-  ##################: admin
-  # Username
-  ##################: editor
-  # Username
-  ##################: viewer
+  000000000000000000: admin #Username
+  000000000000000000: editor #Username
+  000000000000000000: viewer #Username
 
 commands:
   overrides: []
   prefix: '!'
 
 levels:
-  # Role
-  ##################: ###
+  000000000000000000: 000 # Role
 
 nickname: R0WB0AT
 
@@ -34,11 +30,11 @@ plugins:
   utilities: {}
 
   admin:
-    mute_role: ##################
+    mute_role: 000000000000000000
 
   modlog:
     channels:
-      #######################:
+      00000000000000000000000:
         exclude: []
         include: []
     ignored_users: []
@@ -71,7 +67,6 @@ plugins:
     levels:
       0:
         filter_invites: true
-        invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight']
-        filter_domains: false
+        invites_whitelist: ['discord-developers', 'discord-testers', 'discord-api', 'events', 'discord-linux', 'gamenight', 'discord-feedback']
         blocked_words: ['word1', 'word2', 'word3']
 ```
