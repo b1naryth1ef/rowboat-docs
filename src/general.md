@@ -4,8 +4,7 @@
 
 ```
 web:
-  # b1nzy
-  80351110224678912: admin
+  80351110224678912: admin #b1nzy
 ```
 
 Web determines which users are able to view the configuration dashboard for the server. Commenting a line with the Username above each ID helps with organization.
@@ -24,12 +23,9 @@ Set a nickname for the bot! Nickname is applied upon reload of the bot.
 
 ```
 levels:
-  # Admin
-  290295853124550657: 100
-  # Moderator
-  295476842935353345: 50
-  # Trusted
-  298993418577903616: 10
+  290295853124550657: 100 #Admin
+  295476842935353345: 50 #Moderator
+  298993418577903616: 10 #Trusted
 ```
 
 This is where you assign levels to each role! Remember, the default level is 0 if a user doesn't have one of the listed roles. Users will have the highest level of the roles they're assigned.
