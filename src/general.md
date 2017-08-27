@@ -38,11 +38,12 @@ Levels can be assigned anywhere from 0 to 100, keeping in mind the default permi
 
 ```
 commands:
+  prefix: '!'
   overrides:
   - {plugin.name: 'utilities', out: {level: 10}}
   - {group: 'clean', out: {level: 40}}
   - {name: 'mute', out: {level: 40}}
-  prefix: '!'
+  - {out: {level: 1}}
 ```
 
 Here, you can change your prefix, which is the symbol which begins each command. For example: !ban, !!ban, $ban, ^ban, rb!ban
@@ -50,10 +51,10 @@ Here, you can change your prefix, which is the symbol which begins each command.
 Overrides allow you to customize which levels and roles can use each command, or group of commands.
 
 "plugin.name" is used for all commands in a plugin (hint: every section that's indented one in beneath the "plugins:" section is a plugin)  
-"group" is used for commands which have multiple components. Some example: clean, archive, role, stars)  
+"group" is used for commands which have multiple components. Some examples: clean, archive, role, stars)  
 "name" is used for all other commands.  
 "out: {level: }}" is used to assign the minimum level required to use the command.
 
 You can use "{out: {level: }}" by itself to set a minimum required level for ALL commands!
 
-Taking the configuration above as an example, if you didn't want all members to use utility commands (such as jumbo, info, and cat), you can set the level of the "utilities" plugin to 10. This means the role must have at least level 10 assigned to it to use utility commands.
+Taking the configuration above as an example, if you didn't want regular members to use utility commands (such as jumbo, info, and cat), you can set the level of the "utilities" plugin to 10. This means the role must have at least level 10 assigned to use utility commands.
