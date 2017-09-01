@@ -77,7 +77,7 @@ The admin plugin provides a set of administrator commands that help in moderatin
       reason_edit_level: 50
       persist:
         roles: true
-          role_ids: [278810978722906112, 278972423502561280, 278972377587515392]
+        role_ids: [278810978722906112, 278972423502561280, 278972377587515392]
         nickname: true
         voice: false
       role_aliases:
