@@ -21,10 +21,8 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 
 | Option | Description | Type | Default |
 |--------|-------------|------|---------|
-| compact | Whether to render the mode in the compact format (vs rich) | bool | true |
 | include | List of modlog actions to include. If empty this includes all mod log actions | list | empty |
 | exclude | List of modlog actions to exclude. If empty this excludes no mod log actions | list | empty |
-| rich | List of modlog actions to force render in rich mode | list | empty |
 | timestamps | Whether to render timestamps along with loglines | bool | false |
 | timezone | The timezone that timestamps are rendered in. Supported timezones: (https://gist.github.com/heyalexej/8bf688fd67d7199be4a1682b3eec7568) | timezone | US/Eastern |
 
