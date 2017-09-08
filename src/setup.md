@@ -17,8 +17,8 @@ web:
   000000000000000000: viewer #Username
 
 commands:
-  overrides: []
   prefix: '!'
+  overrides: []
 
 levels:
   000000000000000000: 000 # Role
