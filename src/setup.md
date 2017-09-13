@@ -2,7 +2,7 @@
 
 ## Adding the Bot
 
-Join https://discord.gg/rowboat and post your request in the #server-requests channel, following the instructions in the channel topic. Minimum requirement is 1K active users.
+Join https://discord.gg/rowboat and post your request in the #server-requests channel, following the instructions in the channel topic. Minimum requirement is 1K active users. If you are accepted, you will be placed into a introduction channel where further instructions will be given. If your message is deleted, that means your application was denied. You may reapply if there is significant change to your server (more members, different topic, partnership, etc.)
 
 ## How to Set Up
 
