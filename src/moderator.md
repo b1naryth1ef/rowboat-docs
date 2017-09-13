@@ -18,6 +18,8 @@
 
 ## Admin Utilities
 
+| Name | Description | Default Level | Usage |
+|------|-------------|---------------|-------|
 | `!clean all [count]` | Cleans (deletes) [count] many messages in the current channel | Moderator | `!clean all 20` |
 | `!clean user {user} [count]` | Cleans [count] many messages a given user sent in the current channel | Moderator | `!clean user 232921983317180416 50` |
 | `!clean bots [count]` | Cleans [count] many messages sent by bots in the current channel | Moderator | `!clean bots 30` |
@@ -36,6 +38,8 @@
 
 ## Infractions
 
+| Name | Description | Default Level | Usage |
+|------|-------------|---------------|-------|
 | `!infractions search {query}` | Searches infractions database for given query | Moderator | `!infractions search 232921983317180416` OR `!infractions search rowboat#0001` OR `!infractions search spamming`
 | `!infractions info {inf#}` | Presents information on the given infraction | Moderator | `!infractions info 1274`
 | `!infractions duration {inf#} {duration}` | Updates the duration of the given infraction. Duration starts from time of initial action | Moderator | `!infractions duration 1274 5h` |
@@ -44,6 +48,8 @@
 
 ## Starboard
 
+| Name | Description | Default Level | Usage |
+|------|-------------|---------------|-------|
 | `!stars block {user}` | Prevents the user from starring any messages and prevents their messages from being starred | Moderator | `!stars block @rowboat#0001` OR `!stars block 232921983317180416` |
 | `!stars unblock {user}` | Unblocks a user from the starboard | Moderator | `!stars unblock @rowboat#0001` OR `!stars unblock 232921983317180416` |
 | `!stars hide {mid}` | Hides a starred message from the starboard | Moderator | `!stars hide 320312743842545664` |
