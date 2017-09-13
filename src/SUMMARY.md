@@ -4,6 +4,7 @@
 
 * [Setting Up Rowboat](setup.md)
 * [General Configuration](general.md)
+* [Moderator Command Reference](moderator.md)
 * [Plugins]()
   * [Utility](plugins/utility.md)
   * [Admin](plugins/admin.md)
