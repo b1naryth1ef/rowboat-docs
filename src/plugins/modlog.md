@@ -14,6 +14,7 @@ The modlog plugin provides a mechanisim for logging various events and actions t
 | Option | Description | Type | Default |
 |--------|-------------|------|---------|
 | ignored\_users | A list of user ids which are ignored in the modlog. This is useful for ignoring bots that regularly delete or edit their messages | list | empty |
+| ignored\_channels | A list of channel ids which are ignored in the modlog. This is useful for ignoring private or high-activity channels | list | empty |
 | new\_member\_threshold | The number of seconds an account is considered new | int | 900 (15 minutes) |
 | channels | Mapping of channel names/ids to ModLog Configurations | dict | empty |
 
