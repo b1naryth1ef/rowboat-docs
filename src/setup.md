@@ -8,7 +8,7 @@ Join https://discord.gg/rowboat and post your request in the #server-requests ch
 
 Once rowboat has been added to your server, go to https://dashboard.rowboat.party/ to edit your server's configuration. Use the sidebar to read about each plugin, then use the example below along with the information in the sidebar to set up your own customized rowboat configuration.
 
-Below is a blank configuration example with web, utilities, admin, modlog, spam, and censor set up. While you can simply copy-paste this to your own server's configuration and fill in the blanks to have a perfectly usable rowboat, it's highly encouraged that you read through the full documentation to understand each component and customize rowboat to your server's needs.
+Below is a blank configuration example with web, utilities, admin, infractions, modlog, spam, and censor set up. While you can simply copy-paste this to your own server's configuration and fill in the blanks to have a perfectly usable rowboat, it's highly encouraged that you read through the full documentation to understand each component and customize rowboat to your server's needs.
 
 ```
 web:
@@ -29,7 +29,9 @@ plugins:
 
   utilities: {}
 
-  admin:
+  admin: {}
+
+  infractions:
     mute_role: 000000000000000000
 
   modlog:

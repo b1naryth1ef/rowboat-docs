@@ -8,6 +8,7 @@
 * [Plugins]()
   * [Utility](plugins/utility.md)
   * [Admin](plugins/admin.md)
+  * [Infractions](plugins/infractions.md)
   * [Censor](plugins/censor.md)
   * [Spam](plugins/spam.md)
   * [Modlog](plugins/modlog.md)
