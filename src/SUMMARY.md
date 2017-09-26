@@ -2,6 +2,7 @@
 
 [Introduction](README.md)
 
+* [Premium](premium.md)
 * [Setting Up Rowboat](setup.md)
 * [General Configuration](general.md)
 * [Moderator Command Reference](moderator.md)
