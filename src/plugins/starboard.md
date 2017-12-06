@@ -33,6 +33,7 @@ The starboard plugin provides an ongoing board of highlighted messages through c
 | min\_stars | Minimum number of star reactions required before a message is posted to the starboard | int | 1 |
 | star\_color\_max | Sets the "max" star level. Changes shading of rich embed bar color per level and gives the starboard entry a different emoji at max level | int | 15 |
 | prevent\_self\_star | Whether to prevent a user from starring their own message | bool | false |
+| ignored\_channels | Sets which channels to ignore starred messages from | dict | empty |
 
 ## Configuration Example
 
@@ -44,4 +45,5 @@ The starboard plugin provides an ongoing board of highlighted messages through c
         min_stars: 6
         star_color_max: 15
         prevent_self_star: true
+        ignored_channels: []
 ```
